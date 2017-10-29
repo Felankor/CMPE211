@@ -1,5 +1,5 @@
 # CMPE 211 : Data Structures and Algorithms
-
+__Textbook__.  The textbook Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne.
 All the related course materials can be found on our textbook’s website. 
 
 Codes:
