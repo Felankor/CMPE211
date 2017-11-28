@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\begin{document}
+\author{Quiz 3 - Basic Simulation}
+\title{CMPE 211 - Data Structures and Algorithms}
+%\setlength\headheight{26pt} 
+
+
+
+
+\date{}
+\maketitle
+\setcounter{secnumdepth}{0}
+You are given simpleAgentQuiz.java code in which a population of $N$ agents
+interact with each other during a given period of time. 
+Agents have memory which is implemented as an \textbf{unordered array}.
+At each time step, two random agents are selected to interact. 
+Interaction takes place as giving and taking recommendations among selected agents.
+Recommendation is a simple operation which returns a random item from the memory.
+
+
+\begin{enumerate}
+\item Fill the following functions in the code.
+\begin{itemize}
+\item know(item)  $\;\;$ : \emph{does item exist in the memory, if so return its index.}
+\item learn(item) $\;\;\;$: \emph{add \textbf{unknown} item to a random place in the memory}
+\item recommend() : \emph{return a random item from the memory}
+\end{itemize}
+
+\item Write a new java program, based on the given code, that uses \textbf{an ordered array} for the representation of memory.
+\begin{itemize}
+\item know(item)  $\;\;$ : \emph{does item exist in the memory, if so return its index.}
+\item learn(item) $\;\;\;$: \emph{add \textbf{unknown} item to its \textbf{correct} place}
+\item recommend() : \emph{return random item \textbf{from the range $[M/2,M]$}}
+\end{itemize}
+
+\item Compare running time for the following operations
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\begin{tabular}{c|c|c}
+ & ordered & unordered\\
+ \hline
+\hline
+know(item) & &\\
+\hline
+learn(item) & &\\
+\hline
+recommend() & &\\
+\end{tabular}
+\end{center}
+%\label{default}
+\end{table}%
+
+
+\end{enumerate}
+\end{document}
