@@ -1,0 +1,62 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\begin{document}
+\author{Quiz 4 - Nested Binary Search Tree}
+\title{CMPE 211 - Data Structures and Algorithms}
+%\setlength\headheight{26pt} 
+
+
+
+
+\date{}
+\maketitle
+\setcounter{secnumdepth}{0}
+
+\paragraph{Inner BST}
+Following 9 movie names will be the key
+\begin{itemize}
+\item Star Wars, The Dark Knight, Gladiator,
+\item Up, Wall-E, Superman,
+\item Titanic, Amelie, Casablanca
+\end{itemize}
+Corresponding values will be rating scores.
+
+
+
+\paragraph{Outer BST}
+Following 3 person will be the key
+\begin{itemize}
+\item Ahmet, Berk, Selin,
+\end{itemize}
+Corresponding values will be \textbf{Inner BST} described above.
+
+
+\hspace{2cm}
+
+
+You are given the code for a Binary Search Tree. Use this code to implement nested BST. In the outer BST, names of a person will be the key for an inner BST. Inner BST will store name of the movies as keys and scores given to them by the person (key of outer BST) as values.
+
+
+
+
+\begin{enumerate}
+\item Create a client BST, fill the nested BST as follows and print key value pairs 
+\begin{itemize}
+\item Ahmet : (Amelie:1.0)  (Casablanca:1.0)  (Gladiator:5.0)  (Star Wars:5.0)  (Superman:3.0)  (The Dark Knight:5.0)  (Titanic:1.0)  (Up:3.0)  (Wall-E:3.0) 
+\item
+Berk : (Amelie:1.0)  (Casablanca:1.0)  (Gladiator:3.0)  (Star Wars:3.0)  (Superman:5.0)  (The Dark Knight:3.0)  (Titanic:1.0)  (Up:5.0)  (Wall-E:5.0) 
+\item
+Selin : (Amelie:5.0)  (Casablanca:5.0)  (Gladiator:1.0)  (Star Wars:1.0)  (Superman:3.0)  (The Dark Knight:1.0)  (Titanic:5.0)  (Up:3.0)  (Wall-E:3.0) 
+\end{itemize}
+
+\item Write a function in the client, that computes the similarity between the preferences of two people a and b. Calculate similarities for all pairs as follows.
+$$
+sim(a,b) = \frac{1}{1 + \sum_{film} (score(a, film) - score(b, film))
+^2}
+$$ 
+
+\end{enumerate}
+\end{document}
