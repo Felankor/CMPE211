@@ -12051,7 +12051,7 @@ Uzay
 * Make recommendations based on what similar people like
 
 </code></pre>
-<h3 id="Prediction-based-on-others-rating-score">Prediction based on others rating score<a class="anchor-link" href="#Prediction-based-on-others-rating-score">&#182;</a></h3><p style="text-align:center;"><img src="fig/reco.pdf"  width="500" ></p><p>Above you see two cases,</p>
+<h3 id="Prediction-based-on-others-rating-score">Prediction based on others rating score<a class="anchor-link" href="#Prediction-based-on-others-rating-score">&#182;</a></h3><p style="text-align:center;"><img src="fig/reco.jpg"  width="500" ></p><p>Above you see two cases,</p>
 <h4 id="in-case-I">in case I<a class="anchor-link" href="#in-case-I">&#182;</a></h4><p>Uzay is equally similar to all of his friends. Suppose all of his friends watched a movie m that Uzay has not seen yet. What do you expect to be Uzay's rating on the movie m?</p>
 $$
 score(Uzay, m) =\frac{1}{n} \sum score(friend, m) = 
@@ -12062,7 +12062,7 @@ $$
 score(Uzay, m) =\frac{\sum sim(Uzay, friend) \times score(friend, m)}{\sum sim(Uzay, friend)}  = 
 \frac{1.0 \times  4 + 0.2 \times 1 + 0.5 \times  5}{1.0 + 0.2 + 0.5} = 3.94
 $$<p>This is called weighted sum. And since the weight(similarity) of Fatih is bigger result is more close to Fatih's rating score and more distant than less similar friends ratings.</p>
-<h3 id="Which-movie-to-recommend?">Which movie to recommend?<a class="anchor-link" href="#Which-movie-to-recommend?">&#182;</a></h3><p style="text-align:center;"><img src="fig/movie.pdf"  width="500" ></p><p>Predict Uzay's rating for the movie Amelie
+<h3 id="Which-movie-to-recommend?">Which movie to recommend?<a class="anchor-link" href="#Which-movie-to-recommend?">&#182;</a></h3><p style="text-align:center;"><img src="fig/movie.jpg"  width="500" ></p><p>Predict Uzay's rating for the movie Amelie
 $$
 score(Uzay, Amelie) =
 \frac{1.0 \times  3.5 + 0.2 \times 5 + 0.5 \times  3}{1.0 + 0.2 + 0.5} = 3.82
@@ -12203,7 +12203,7 @@ $$
 <p>If we represent our dataset in x-y coordinate system,
 where x-axis is the score for the movie Star Wars
 and y-axis is the score for the movie Amelie</p>
-<p style="text-align:center;"><img src="fig/distance.pdf"  width="200" ></p>
+<p style="text-align:center;"><img src="fig/distance.jpg"  width="200" ></p>
 </div>
 </div>
 </div>
@@ -12861,7 +12861,7 @@ Recommendation via (precomputation) for Uzay: [(5.0, &#39;Star Wars&#39;), (5.0,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Why-Item-based-recommendation-differs-from-user-based-recommendation?">Why Item-based recommendation differs from user-based recommendation?<a class="anchor-link" href="#Why-Item-based-recommendation-differs-from-user-based-recommendation?">&#182;</a></h3><p style="text-align:center;"><img src="fig/ItemBased.pdf"  width="500" ></p><h4 id="Item-based">Item-based<a class="anchor-link" href="#Item-based">&#182;</a></h4><p>We dont have enough data about Uzay's taste (only one score about the film Galdiator) to correctly predict how much uzay will like Amelie. For the moment all we can do</p>
+<h3 id="Why-Item-based-recommendation-differs-from-user-based-recommendation?">Why Item-based recommendation differs from user-based recommendation?<a class="anchor-link" href="#Why-Item-based-recommendation-differs-from-user-based-recommendation?">&#182;</a></h3><p style="text-align:center;"><img src="fig/ItemBased.jpg"  width="500" ></p><h4 id="Item-based">Item-based<a class="anchor-link" href="#Item-based">&#182;</a></h4><p>We dont have enough data about Uzay's taste (only one score about the film Galdiator) to correctly predict how much uzay will like Amelie. For the moment all we can do</p>
 $$
 score(Uzay, Amelie) =\frac{\sum sim(movie, Amelie) \times score(Uzay, movie)}{\sum sim(movie, Amelie)}  = 
 \frac{0.185 \times  5}{0.185} = 5
