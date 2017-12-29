@@ -1,0 +1,60 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+\author{Quiz 5 - Hash Table Implementation of Sparse Vectors}
+\title{CMPE 211 - Data Structures and Algorithms}
+%\setlength\headheight{26pt} 
+
+
+
+
+\date{}
+\maketitle
+\setcounter{secnumdepth}{0}
+
+
+
+You are given the code for a linear probing hash table in HashST.java. Use this code to represent a sparse vector, where keys of HashST correspond to index of a sparse vector. 
+
+
+
+
+\begin{enumerate}
+\item 
+The code for SparseVector is also given to you, but its constructor, size, put, get methods are missing. Also fill the missing parts of the dot-product method.
+
+\item 
+In the main method, create a sparse matrix as an array of SparseVector's. This sparse vector will have the same values as this matrix,
+$$
+A =
+\begin{bmatrix}
+    8     & 4 & 0 & 0 & 0  & 0 & 0\\
+    0    & 0 & 0 & 0 & 0  & 0 & 0\\
+     0    & 0 & 0 & 0 & 0  & 0 & 0\\
+      0    & 0 & 0 & 0 & 0  & 0 & 0\\
+       0    & 0 & 0 & 0 & 0  & 0 & 0\\
+        0    & 0 & 0 & 0 & 0  & 0 & 0\\
+         0    & 0 & 0 & 0 & 0  & 0 & 0\\
+\end{bmatrix}
+$$
+
+\item 
+Write an array of type double
+$$
+x =
+\begin{bmatrix}
+    0.1 & 0.1  & 0.1  & 0.1  & 0.1  & 0.25  &0.25\\
+\end{bmatrix}
+$$
+
+\item 
+Calculate and show the result of
+$$
+b = Ax 
+$$
+\end{enumerate}
+\end{document}
